@@ -10,24 +10,30 @@
     <meta name="keywords" content="Abdul Basit, AZ MEER SMC-PRIVATE LIMITED, AzMeer Groups, Superior University Lahore, Grozy Mart, Flutter Engineer, Play Store Developer 7792521008004964438, SECP 20260310_4609622">
     <meta name="author" content="Abdul Basit">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <link rel="canonical" href="https://abdulbasit26z1.github.io/Portfolio/index.html">
+    <link rel="canonical" href="https://abdulbasit26z1.github.io/Abdul-Basit/">
 
-    <!-- Open Graph / Social Media -->
+    <!-- Open Graph / Social Media Preview Images -->
     <meta property="og:type" content="profile">
     <meta property="og:title" content="Abdul Basit | Founder & Lead Mobile Architect">
     <meta property="og:description" content="Sole Owner & Manager of AZ MEER (SMC-Private) Limited. Specialized in Flutter, Android Native, 60 FPS UI Tuning, and Enterprise IT Systems.">
-    <meta property="og:url" content="https://abdulbasit26z1.github.io/Portfolio/index.html">
+    <meta property="og:url" content="https://abdulbasit26z1.github.io/Abdul-Basit/">
     <meta property="og:site_name" content="Abdul Basit System Matrix">
+    <meta property="og:image" content="https://github.com/abdulbasit26Z1.png">
+    <meta property="og:image:width" content="500">
+    <meta property="og:image:height" content="500">
+    <meta property="og:image:alt" content="Abdul Basit - Founder & CEO AZ MEER (SMC-PRIVATE) LIMITED">
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@AzMeerGroups">
+    <meta name="twitter:site" content="@Az_AbdulBasit">
     <meta name="twitter:title" content="Abdul Basit | Founder & CEO, AzMeer Groups">
     <meta name="twitter:description" content="Cross-Platform Flutter Engineer, Software Entrepreneur, and Creator of Grozy Mart & AzMeer Utilities.">
+    <meta name="twitter:image" content="https://github.com/abdulbasit26Z1.png">
 
-    <!-- Theme Color & Favicon SVG -->
+    <!-- Theme Color & Favicon -->
     <meta name="theme-color" content="#090d16">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230f172a'/><text x='50%' y='68%' font-size='52' font-weight='900' fill='%238b5cf6' text-anchor='middle' font-family='system-ui, sans-serif'>AB</text></svg>">
+    <link rel="icon" type="image/png" href="https://github.com/abdulbasit26Z1.png">
+    <link rel="apple-touch-icon" href="https://github.com/abdulbasit26Z1.png">
 
     <!-- Critical 3D & Ultra-Modern CSS Styling -->
     <style>
@@ -64,7 +70,7 @@
             overflow-x: hidden;
         }
 
-        /* Animated 3D Futuristic Glowing Backdrop */
+        /* Animated Backdrop */
         .ambient-bg {
             position: fixed;
             top: 0;
@@ -85,22 +91,8 @@
             animation: floatOrb 18s ease-in-out infinite alternate;
         }
 
-        .orb-1 {
-            width: 450px;
-            height: 450px;
-            background: #ddd6fe;
-            top: -100px;
-            right: -50px;
-        }
-
-        .orb-2 {
-            width: 400px;
-            height: 400px;
-            background: #cffafe;
-            bottom: -50px;
-            left: -100px;
-            animation-delay: -5s;
-        }
+        .orb-1 { width: 450px; height: 450px; background: #ddd6fe; top: -100px; right: -50px; }
+        .orb-2 { width: 400px; height: 400px; background: #cffafe; bottom: -50px; left: -100px; animation-delay: -5s; }
 
         @keyframes floatOrb {
             0% { transform: translate(0, 0) scale(1); }
@@ -108,7 +100,7 @@
             100% { transform: translate(-40px, 80px) scale(0.95); }
         }
 
-        /* Glassmorphic Sticky Header */
+        /* Header Nav */
         header {
             position: sticky;
             top: 15px;
@@ -119,12 +111,11 @@
         }
 
         .nav-glass {
-            background: rgba(255, 255, 255, 0.8);
+            background: rgba(255, 255, 255, 0.85);
             backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
             border: 1px solid rgba(255, 255, 255, 0.9);
             border-radius: 999px;
-            padding: 0.85rem 1.75rem;
+            padding: 0.75rem 1.75rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -136,14 +127,20 @@
             font-weight: 800;
             text-decoration: none;
             color: var(--text-dark);
-            letter-spacing: -0.02em;
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 10px;
+        }
+
+        .brand-nav-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--primary);
         }
 
         .brand-logo span {
-            color: var(--primary);
             background: linear-gradient(135deg, var(--primary), var(--accent-cyan));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -163,11 +160,9 @@
             transition: all 0.2s ease;
         }
 
-        .nav-links a:hover {
-            color: var(--primary);
-        }
+        .nav-links a:hover { color: var(--primary); }
 
-        /* Container & 3D Perspective */
+        /* Container */
         main {
             max-width: var(--max-width);
             margin: 2rem auto;
@@ -175,9 +170,9 @@
             perspective: 1200px;
         }
 
-        /* Hero Section with 3D Tilt Card */
+        /* Hero Section */
         .hero-section {
-            padding: 3rem 0;
+            padding: 2.5rem 0;
             display: grid;
             grid-template-columns: 1fr 340px;
             gap: 2.5rem;
@@ -187,18 +182,37 @@
         .hero-card {
             background: var(--bg-card);
             backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
             border: 1px solid rgba(255, 255, 255, 0.8);
             border-radius: var(--radius-lg);
             padding: 3rem;
             box-shadow: var(--shadow-3d);
-            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
-            transform-style: preserve-3d;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
         }
 
         .hero-card:hover {
-            transform: translateY(-6px) rotateX(2deg) rotateY(-1deg);
+            transform: translateY(-6px);
             box-shadow: var(--shadow-hover);
+        }
+
+        .hero-profile-header {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 24px;
+            object-fit: cover;
+            border: 3px solid var(--primary);
+            box-shadow: 0 10px 25px var(--primary-glow);
+            transition: transform 0.3s ease;
+        }
+
+        .hero-avatar:hover {
+            transform: scale(1.05) rotate(2deg);
         }
 
         .badge-pill {
@@ -210,11 +224,11 @@
             border: 1px solid rgba(124, 58, 237, 0.2);
             border-radius: 999px;
             color: var(--primary);
-            font-size: 0.8rem;
+            font-size: 0.78rem;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.05em;
-            margin-bottom: 1.25rem;
+            margin-bottom: 0.5rem;
         }
 
         .badge-pill::before {
@@ -228,29 +242,24 @@
         }
 
         .hero-title {
-            font-size: 3rem;
+            font-size: 2.75rem;
             font-weight: 900;
             line-height: 1.1;
             letter-spacing: -0.03em;
-            margin-bottom: 1rem;
             background: linear-gradient(135deg, #0f172a 0%, #334155 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
         .hero-subtitle {
-            font-size: 1.15rem;
+            font-size: 1.1rem;
             color: var(--text-muted);
             line-height: 1.6;
             margin-bottom: 2rem;
             font-weight: 400;
         }
 
-        .hero-cta {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
+        .hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; }
 
         .btn-3d {
             display: inline-flex;
@@ -281,7 +290,6 @@
             background: rgba(255, 255, 255, 0.9);
             color: var(--text-dark);
             border: 1px solid var(--border-subtle);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
         }
 
         .btn-secondary:hover {
@@ -290,7 +298,7 @@
             color: var(--primary);
         }
 
-        /* 3D Sidebar Widget */
+        /* Side Matrix Card */
         .side-matrix-card {
             background: var(--bg-card);
             backdrop-filter: blur(20px);
@@ -311,27 +319,31 @@
             border-bottom: 1px solid var(--border-subtle);
         }
 
-        .matrix-item:last-child {
-            border-bottom: none;
-            padding-bottom: 0;
-        }
+        .matrix-item:last-child { border-bottom: none; padding-bottom: 0; }
 
         .matrix-icon {
-            width: 40px;
-            height: 40px;
-            border-radius: 10px;
+            width: 42px;
+            height: 42px;
+            border-radius: 12px;
             background: rgba(124, 58, 237, 0.08);
             color: var(--primary);
             display: flex;
             align-items: center;
             justify-content: center;
             font-weight: 800;
-            font-size: 1.1rem;
+            font-size: 0.95rem;
             flex-shrink: 0;
+            overflow: hidden;
+        }
+
+        .matrix-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .matrix-info h4 {
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             text-transform: uppercase;
             color: var(--text-light);
             letter-spacing: 0.05em;
@@ -345,66 +357,24 @@
         }
 
         /* Section Layouts */
-        .section-block {
-            margin: 4rem 0;
-        }
+        .section-block { margin: 4rem 0; }
+        .section-header { margin-bottom: 2rem; }
+        .section-title { font-size: 1.85rem; font-weight: 800; color: var(--text-dark); }
+        .section-subtitle { font-size: 0.95rem; color: var(--text-muted); margin-top: 4px; }
 
-        .section-header {
-            margin-bottom: 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-        }
+        .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.75rem; }
+        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
 
-        .section-title {
-            font-size: 1.85rem;
-            font-weight: 800;
-            letter-spacing: -0.02em;
-            color: var(--text-dark);
-        }
-
-        .section-subtitle {
-            font-size: 0.95rem;
-            color: var(--text-muted);
-            margin-top: 4px;
-        }
-
-        /* Grid Cards */
-        .grid-2 {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1.75rem;
-        }
-
-        .grid-3 {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1.5rem;
-        }
-
+        /* Card Styles with Image Support */
         .card-3d {
             background: var(--bg-card);
             backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
             border: 1px solid var(--border-subtle);
             border-radius: var(--radius-md);
             padding: 1.75rem;
             box-shadow: var(--shadow-3d);
-            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            transition: all 0.3s ease;
             position: relative;
-            overflow: hidden;
-        }
-
-        .card-3d::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background: linear-gradient(90deg, var(--primary), var(--accent-cyan));
-            opacity: 0;
-            transition: opacity 0.3s ease;
         }
 
         .card-3d:hover {
@@ -414,22 +384,31 @@
             border-color: var(--border-glow);
         }
 
-        .card-3d:hover::before {
-            opacity: 1;
-        }
-
         .card-head {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
             margin-bottom: 1rem;
+            gap: 12px;
         }
 
-        .card-title {
-            font-size: 1.15rem;
-            font-weight: 700;
-            color: var(--text-dark);
+        .card-header-main {
+            display: flex;
+            align-items: center;
+            gap: 12px;
         }
+
+        .app-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            object-fit: cover;
+            border: 1px solid var(--border-subtle);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+            background: #ffffff;
+        }
+
+        .card-title { font-size: 1.15rem; font-weight: 700; color: var(--text-dark); }
 
         .card-tag {
             font-size: 0.75rem;
@@ -438,20 +417,13 @@
             border-radius: 6px;
             background: rgba(6, 182, 212, 0.1);
             color: #0891b2;
+            white-space: nowrap;
         }
 
-        .card-desc {
-            font-size: 0.925rem;
-            color: var(--text-muted);
-            line-height: 1.6;
-        }
+        .card-desc { font-size: 0.925rem; color: var(--text-muted); line-height: 1.6; }
 
         /* Academic Timeline */
-        .timeline {
-            position: relative;
-            padding-left: 2rem;
-        }
-
+        .timeline { position: relative; padding-left: 2rem; }
         .timeline::before {
             content: '';
             position: absolute;
@@ -462,14 +434,8 @@
             background: linear-gradient(180deg, var(--primary) 0%, var(--accent-cyan) 100%);
         }
 
-        .timeline-item {
-            position: relative;
-            margin-bottom: 2rem;
-        }
-
-        .timeline-item:last-child {
-            margin-bottom: 0;
-        }
+        .timeline-item { position: relative; margin-bottom: 2rem; }
+        .timeline-item:last-child { margin-bottom: 0; }
 
         .timeline-dot {
             position: absolute;
@@ -483,14 +449,8 @@
             box-shadow: 0 0 10px var(--primary-glow);
         }
 
-        /* App Matrix Chips */
-        .app-chip-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.6rem;
-            margin-top: 1rem;
-        }
-
+        /* Chips */
+        .app-chip-list { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1rem; }
         .app-chip {
             background: rgba(241, 245, 249, 0.9);
             border: 1px solid var(--border-subtle);
@@ -501,6 +461,16 @@
             color: var(--text-dark);
             text-decoration: none;
             transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .app-chip-icon {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            object-fit: cover;
         }
 
         .app-chip:hover {
@@ -527,61 +497,47 @@
             gap: 1rem;
         }
 
-        .footer-text {
-            color: var(--text-muted);
-            font-size: 0.9rem;
-        }
-
-        /* Responsive Breakpoints */
         @media (max-width: 992px) {
-            .hero-section {
-                grid-template-columns: 1fr;
-            }
-            .grid-3 {
-                grid-template-columns: repeat(2, 1fr);
-            }
+            .hero-section { grid-template-columns: 1fr; }
+            .grid-3 { grid-template-columns: repeat(2, 1fr); }
         }
 
         @media (max-width: 640px) {
-            .hero-title {
-                font-size: 2.25rem;
-            }
-            .grid-2, .grid-3 {
-                grid-template-columns: 1fr;
-            }
-            .nav-links {
-                display: none;
-            }
+            .hero-title { font-size: 2.1rem; }
+            .hero-profile-header { flex-direction: column; align-items: flex-start; }
+            .grid-2, .grid-3 { grid-template-columns: 1fr; }
+            .nav-links { display: none; }
         }
     </style>
 
-    <!-- Google Entity Knowledge Graph JSON-LD Schema (@graph) -->
+    <!-- Schema Graph JSON-LD with Entity Images -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
         {
           "@type": "ProfilePage",
-          "@id": "https://abdulbasit26z1.github.io/Portfolio/index.html#webpage",
-          "url": "https://abdulbasit26z1.github.io/Portfolio/index.html",
+          "@id": "https://abdulbasit26z1.github.io/Abdul-Basit/#webpage",
+          "url": "https://abdulbasit26z1.github.io/Abdul-Basit/",
           "name": "Abdul Basit - Official Verified Entity Page",
           "isPartOf": {
             "@type": "WebSite",
-            "@id": "https://abdulbasit26z1.github.io/Portfolio/#website",
-            "url": "https://abdulbasit26z1.github.io/Portfolio/",
+            "@id": "https://abdulbasit26z1.github.io/Abdul-Basit/#website",
+            "url": "https://abdulbasit26z1.github.io/Abdul-Basit/",
             "name": "Abdul Basit System Matrix"
           },
           "mainEntity": {
-            "@id": "https://abdulbasit26z1.github.io/Portfolio/index.html#person"
+            "@id": "https://abdulbasit26z1.github.io/Abdul-Basit/#person"
           }
         },
         {
           "@type": "Person",
-          "@id": "https://abdulbasit26z1.github.io/Portfolio/index.html#person",
+          "@id": "https://abdulbasit26z1.github.io/Abdul-Basit/#person",
           "name": "Abdul Basit",
           "givenName": "Abdul",
           "familyName": "Basit",
           "alternateName": ["Az Meer", "abdulbasit26Z1"],
+          "image": "https://github.com/abdulbasit26Z1.png",
           "gender": "Male",
           "nationality": {
             "@type": "Country",
@@ -593,17 +549,11 @@
               "addressLocality": "Lahore",
               "addressRegion": "Punjab",
               "addressCountry": "PK"
-            },
-            {
-              "@type": "PostalAddress",
-              "addressLocality": "Taunsa Sharif",
-              "addressRegion": "Dera Ghazi Khan",
-              "addressCountry": "PK"
             }
           ],
           "jobTitle": "Founder & Chief Executive Officer",
           "worksFor": {
-            "@id": "https://abdulbasit26z1.github.io/Portfolio/index.html#organization"
+            "@id": "https://abdulbasit26z1.github.io/Abdul-Basit/#organization"
           },
           "alumniOf": {
             "@type": "EducationalOrganization",
@@ -616,70 +566,30 @@
           },
           "telephone": "+923328657885",
           "email": "teamabhpk@gmail.com",
-          "knowsAbout": [
-            "Cross-Platform Mobile Application Architecture",
-            "Flutter & Dart Software Engineering",
-            "Android Native (Java, Kotlin, Jetpack Compose)",
-            "Google AdMob Monetization & Request Optimization",
-            "Mobile UI 60 FPS Frame Performance Diagnostics",
-            "Full-Stack Web Development (PHP, React, Node)",
-            "Desktop System Macro Automation"
-          ],
           "sameAs": [
             "https://github.com/abdulbasit26Z1",
             "https://play.google.com/store/apps/dev?id=7792521008004964438",
-            "https://www.linkedin.com/company/azmeer-groups/",
-            "https://x.com/AzMeerGroups",
-            "https://www.facebook.com/AzMeerGroups",
-            "https://www.instagram.com/AzMeerGroups",
+            "https://www.linkedin.com/in/abdul-basit-63662a2b7/",
+            "https://x.com/Az_AbdulBasit",
+            "https://web.facebook.com/abdulbasitkhandasti161",
+            "https://www.instagram.com/azmeer2618/",
             "https://www.threads.net/@azmeer.ltd",
-            "https://www.youtube me.com/@AzMeerTech",
-            "https://www.fiverr.com/abdulbasit",
-            "https://medium.com/@AzMeerGroups"
+            "https://www.youtube.com/@AzMeerLtd",
+            "https://www.fiverr.com/azmeer26?public_mode=true",
+            "https://medium.com/@teamabhpk"
           ]
         },
         {
           "@type": "Organization",
-          "@id": "https://abdulbasit26z1.github.io/Portfolio/index.html#organization",
+          "@id": "https://abdulbasit26z1.github.io/Abdul-Basit/#organization",
           "name": "AZ MEER (SMC-PRIVATE) LIMITED",
           "alternateName": ["AzMeer Groups", "Az Meer (SMC-Private) Limited"],
           "legalName": "AZ MEER (SMC-PRIVATE) LIMITED",
+          "logo": "https://github.com/abdulbasit26Z1.png",
+          "image": "https://github.com/abdulbasit26Z1.png",
           "taxID": "20260310_4609622",
           "founder": {
-            "@id": "https://abdulbasit26z1.github.io/Portfolio/index.html#person"
-          },
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+923328657885",
-            "email": "teamabhpk@gmail.com",
-            "contactType": "customer support",
-            "availableLanguage": ["English", "Urdu"]
-          },
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Raiwind Road / Taunsa Sharif",
-            "addressLocality": "Lahore / Dera Ghazi Khan",
-            "addressRegion": "Punjab",
-            "addressCountry": "PK"
-          }
-        },
-        {
-          "@type": "SoftwareApplication",
-          "name": "Grozy Mart",
-          "operatingSystem": "ANDROID",
-          "applicationCategory": "ShoppingApplication",
-          "identifier": "com.grozymart",
-          "author": {
-            "@id": "https://abdulbasit26z1.github.io/Portfolio/index.html#person"
-          }
-        },
-        {
-          "@type": "SoftwareApplication",
-          "name": "Rotary Dial Calculator / Calculator AzMeer",
-          "operatingSystem": "ANDROID",
-          "applicationCategory": "UtilitiesApplication",
-          "author": {
-            "@id": "https://abdulbasit26z1.github.io/Portfolio/index.html#person"
+            "@id": "https://abdulbasit26z1.github.io/Abdul-Basit/#person"
           }
         }
       ]
@@ -694,10 +604,13 @@
         <div class="orb orb-2"></div>
     </div>
 
-    <!-- Glass Header Nav -->
+    <!-- Header Navigation -->
     <header>
         <nav class="nav-glass">
-            <a href="#" class="brand-logo">AZ MEER <span>// Abdul Basit</span></a>
+            <a href="https://abdulbasit26z1.github.io/Abdul-Basit/" class="brand-logo">
+                <img src="https://github.com/abdulbasit26Z1.png" alt="AZ MEER Logo" class="brand-nav-avatar">
+                AZ MEER <span>// Abdul Basit</span>
+            </a>
             <ul class="nav-links">
                 <li><a href="#about">Profile</a></li>
                 <li><a href="#corporate">Corporate SECP</a></li>
@@ -710,11 +623,16 @@
     </header>
 
     <main>
-        <!-- Hero 3D Card Section -->
+        <!-- Hero Section with Avatar -->
         <section class="hero-section" id="about">
             <div class="hero-card">
-                <span class="badge-pill">SECP Registered // Founder & CEO</span>
-                <h1 class="hero-title">Abdul Basit</h1>
+                <div class="hero-profile-header">
+                    <img src="https://github.com/abdulbasit26Z1.png" alt="Abdul Basit - Founder & CEO" class="hero-avatar">
+                    <div>
+                        <span class="badge-pill">SECP Registered // Founder & CEO</span>
+                        <h1 class="hero-title">Abdul Basit</h1>
+                    </div>
+                </div>
                 <p class="hero-subtitle">
                     Founder, Sole Owner & Chief Executive Officer of <strong>AZ MEER (SMC-PRIVATE) LIMITED</strong> (AzMeer Groups). Cross-platform Flutter engineer, native Android architect, and 60 FPS mobile UI performance specialist based in Pakistan.
                 </p>
@@ -730,10 +648,12 @@
                 </div>
             </div>
 
-            <!-- Side Quick Matrix -->
+            <!-- Side Matrix Card -->
             <div class="side-matrix-card">
                 <div class="matrix-item">
-                    <div class="matrix-icon">ID</div>
+                    <div class="matrix-icon">
+                        <img src="https://github.com/abdulbasit26Z1.png" alt="AZ MEER Badge">
+                    </div>
                     <div class="matrix-info">
                         <h4>SECP Reg ID</h4>
                         <p>20260310_4609622</p>
@@ -766,19 +686,20 @@
         <!-- SECP Corporate Matrix -->
         <section class="section-block" id="corporate">
             <div class="section-header">
-                <div>
-                    <h2 class="section-title">01. Corporate Legal & Executive Structure</h2>
-                    <p class="section-subtitle">Duly incorporated single-member corporate entity registered under Pakistani State Authority</p>
-                </div>
+                <h2 class="section-title">01. Corporate Legal & Executive Structure</h2>
+                <p class="section-subtitle">Duly incorporated single-member corporate entity registered under Pakistani State Authority</p>
             </div>
             <div class="grid-2">
                 <div class="card-3d">
                     <div class="card-head">
-                        <div class="card-title">AZ MEER (SMC-PRIVATE) LIMITED</div>
+                        <div class="card-header-main">
+                            <img src="https://github.com/abdulbasit26Z1.png" alt="AZ MEER Corporate Logo" class="app-icon">
+                            <div class="card-title">AZ MEER (SMC-PRIVATE) LIMITED</div>
+                        </div>
                         <span class="card-tag">SECP Registered</span>
                     </div>
                     <p class="card-desc">
-                        Fully incorporated IT and software enterprise registered under the Securities and Exchange Commission of Pakistan (SECP) and tax-verified via the Federal Board of Revenue (FBR). Serves as the official corporate parent entity for software releases, monetization systems, and enterprise services.
+                        Fully incorporated IT and software enterprise registered under the Securities and Exchange Commission of Pakistan (SECP) and tax-verified via the Federal Board of Revenue (FBR).
                     </p>
                     <div class="app-chip-list">
                         <span class="app-chip">Reg ID: 20260310_4609622</span>
@@ -789,14 +710,17 @@
 
                 <div class="card-3d">
                     <div class="card-head">
-                        <div class="card-title">AzMeer Groups & Trade Framework</div>
+                        <div class="card-header-main">
+                            <img src="https://github.com/abdulbasit26Z1.png" alt="AzMeer Groups" class="app-icon">
+                            <div class="card-title">AzMeer Groups & Trade Framework</div>
+                        </div>
                         <span class="card-tag">Brand Matrix</span>
                     </div>
                     <p class="card-desc">
-                        The umbrella commercial brand managing consumer application suites, client development services, and cross-channel technical publishing. Unifies mobile UI/UX engineering, custom backend APIs, and desktop macro automation routines.
+                        The umbrella commercial brand managing consumer application suites, client development services, and cross-channel technical publishing.
                     </p>
                     <div class="app-chip-list">
-                        <span class="app-chip">Trade Mark: AzMeer Groups</span>
+                        <span class="app-chip">Trade Name: AzMeer Groups</span>
                         <span class="app-chip">Fiverr Agency Storefront</span>
                         <span class="app-chip">Digital IT Agency</span>
                     </div>
@@ -807,10 +731,8 @@
         <!-- Academic Track -->
         <section class="section-block" id="academic">
             <div class="section-header">
-                <div>
-                    <h2 class="section-title">02. Academic Journey (Zero Grade to University)</h2>
-                    <p class="section-subtitle">Systematic progression through computer science theory and technological logic</p>
-                </div>
+                <h2 class="section-title">02. Academic Journey (Zero Grade to University)</h2>
+                <p class="section-subtitle">Systematic progression through computer science theory and technological logic</p>
             </div>
             <div class="card-3d">
                 <div class="timeline">
@@ -820,7 +742,7 @@
                             <div class="card-title">Foundational Years (Zero Grade to Middle School)</div>
                             <span class="card-tag">Early Stream</span>
                         </div>
-                        <p class="card-desc">Built core analytical thinking, mathematics skills, and fundamental computer literacy. Developed an early passion for technology, hardware logic, and basic script editing.</p>
+                        <p class="card-desc">Built core analytical thinking, mathematics skills, and fundamental computer literacy.</p>
                     </div>
 
                     <div class="timeline-item">
@@ -829,7 +751,7 @@
                             <div class="card-title">Matriculation in Computer Science</div>
                             <span class="card-tag">Secondary</span>
                         </div>
-                        <p class="card-desc">Completed secondary science stream focusing on Physics, Chemistry, Higher Mathematics, and Computer Science fundamentals, establishing core logic structures.</p>
+                        <p class="card-desc">Completed secondary science stream focusing on Physics, Chemistry, Higher Mathematics, and Computer Science fundamentals.</p>
                     </div>
 
                     <div class="timeline-item">
@@ -838,7 +760,7 @@
                             <div class="card-title">ICS (Intermediate in Computer Science)</div>
                             <span class="card-tag">Higher Secondary</span>
                         </div>
-                        <p class="card-desc">Specialized in C++ programming logic, database concepts, web development, object-oriented paradigms, and computational logic design.</p>
+                        <p class="card-desc">Specialized in C++ programming logic, database concepts, web development, and object-oriented paradigms.</p>
                     </div>
 
                     <div class="timeline-item">
@@ -847,25 +769,30 @@
                             <div class="card-title">BSIT (Bachelor of Science in Information Technology)</div>
                             <span class="card-tag">Superior University, Lahore</span>
                         </div>
-                        <p class="card-desc">Currently excelling in the 4th Semester. Advanced coursework includes Data Structures, Object-Oriented Software Engineering, Mobile App Development, Database Systems, and Automated IDE Build Tools.</p>
+                        <p class="card-desc">Currently excelling in the 4th Semester. Coursework includes Data Structures, Software Engineering, Mobile App Architecture, and Automated IDE Build Tools.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Published Applications -->
+        <!-- Published Applications with Icons -->
         <section class="section-block" id="apps">
             <div class="section-header">
-                <div>
-                    <h2 class="section-title">03. Published Applications & Play Store Suite</h2>
-                    <p class="section-subtitle">Live production releases deployed under Google Play Console ID: 7792521008004964438</p>
-                </div>
+                <h2 class="section-title">03. Published Applications & Play Store Suite</h2>
+                <p class="section-subtitle">Live production releases deployed under Google Play Console ID: 7792521008004964438</p>
             </div>
             <div class="grid-2">
                 <div class="card-3d">
                     <div class="card-head">
-                        <div class="card-title">Grozy Mart</div>
-                        <span class="card-tag">com.grozymart</span>
+                        <div class="card-header-main">
+                            <!-- Grozy Mart App Icon -->
+                            <img src="https://raw.githubusercontent.com/abdulbasit26Z1/abdulbasit26z1.github.io/main/assets/grozymart-icon.png" onerror="this.src='https://github.com/abdulbasit26Z1.png'" alt="Grozy Mart App Icon" class="app-icon">
+                            <div>
+                                <div class="card-title">Grozy Mart</div>
+                                <div style="font-size:0.75rem; color:var(--text-light)">com.grozymart</div>
+                            </div>
+                        </div>
+                        <span class="card-tag">E-Commerce</span>
                     </div>
                     <p class="card-desc">
                         Full-scale mobile e-commerce platform featuring product catalog exploration, real-time delivery order tracking, single-tap cart management, and secure payment handling.
@@ -874,8 +801,15 @@
 
                 <div class="card-3d">
                     <div class="card-head">
-                        <div class="card-title">Rotary Dial Calculator & Pro</div>
-                        <span class="card-tag">Physics UI</span>
+                        <div class="card-header-main">
+                            <!-- Rotary Dial App Icon -->
+                            <img src="https://raw.githubusercontent.com/abdulbasit26Z1/abdulbasit26z1.github.io/main/assets/rotary-icon.png" onerror="this.src='https://github.com/abdulbasit26Z1.png'" alt="Rotary Dial Calculator Icon" class="app-icon">
+                            <div>
+                                <div class="card-title">Rotary Dial Calculator Pro</div>
+                                <div style="font-size:0.75rem; color:var(--text-light)">Physics UI Engine</div>
+                            </div>
+                        </div>
+                        <span class="card-tag">Utility App</span>
                     </div>
                     <p class="card-desc">
                         Vintage-themed calculation app utilizing physics-based rotary dial spin animations. Features a Pro ad-free variant with unit conversion modules and midnight carbon dark mode.
@@ -884,7 +818,14 @@
 
                 <div class="card-3d">
                     <div class="card-head">
-                        <div class="card-title">Solo Chess by Az Meer</div>
+                        <div class="card-header-main">
+                            <!-- Solo Chess Icon -->
+                            <img src="https://raw.githubusercontent.com/abdulbasit26Z1/abdulbasit26z1.github.io/main/assets/chess-icon.png" onerror="this.src='https://github.com/abdulbasit26Z1.png'" alt="Solo Chess Icon" class="app-icon">
+                            <div>
+                                <div class="card-title">Solo Chess by Az Meer</div>
+                                <div style="font-size:0.75rem; color:var(--text-light)">Board Engine</div>
+                            </div>
+                        </div>
                         <span class="card-tag">Game Engine</span>
                     </div>
                     <p class="card-desc">
@@ -894,7 +835,14 @@
 
                 <div class="card-3d">
                     <div class="card-head">
-                        <div class="card-title">Sun Flower Simulator</div>
+                        <div class="card-header-main">
+                            <!-- Sun Flower Icon -->
+                            <img src="https://raw.githubusercontent.com/abdulbasit26Z1/abdulbasit26z1.github.io/main/assets/sunflower-icon.png" onerror="this.src='https://github.com/abdulbasit26Z1.png'" alt="Sunflower Simulator Icon" class="app-icon">
+                            <div>
+                                <div class="card-title">Sun Flower Simulator</div>
+                                <div style="font-size:0.75rem; color:var(--text-light)">Interactive Sim</div>
+                            </div>
+                        </div>
                         <span class="card-tag">Casual Sim</span>
                     </div>
                     <p class="card-desc">
@@ -907,10 +855,8 @@
         <!-- GitHub Repositories Architecture -->
         <section class="section-block" id="github">
             <div class="section-header">
-                <div>
-                    <h2 class="section-title">04. GitHub Code Repository Architecture</h2>
-                    <p class="section-subtitle">Primary cloud developer profile: @abdulbasit26Z1</p>
-                </div>
+                <h2 class="section-title">04. GitHub Code Repository Architecture</h2>
+                <p class="section-subtitle">Primary cloud developer profile: @abdulbasit26Z1</p>
             </div>
             <div class="grid-3">
                 <div class="card-3d">
@@ -943,16 +889,14 @@
         <!-- Verified Network Matrix & Contact -->
         <section class="section-block" id="contact">
             <div class="section-header">
-                <div>
-                    <h2 class="section-title">05. Verified Public Channels & Official Contact</h2>
-                    <p class="section-subtitle">Direct communication handles and official business touchpoints</p>
-                </div>
+                <h2 class="section-title">05. Verified Public Channels & Official Contact</h2>
+                <p class="section-subtitle">Direct communication handles and official business touchpoints</p>
             </div>
             <div class="card-3d">
                 <div class="grid-2" style="margin-bottom: 1.5rem;">
                     <div>
                         <h4 style="color: var(--text-light); text-transform:uppercase; font-size: 0.8rem; letter-spacing:0.05em;">Phone / WhatsApp Support</h4>
-                        <p style="font-size: 1.1rem; font-weight:700; color:var(--text-dark); margin-top:2px;">+92 332 8657885 / +92 370 0602339</p>
+                        <p style="font-size: 1.1rem; font-weight:700; color:var(--text-dark); margin-top:2px;">+92 332 8657885</p>
                     </div>
                     <div>
                         <h4 style="color: var(--text-light); text-transform:uppercase; font-size: 0.8rem; letter-spacing:0.05em;">Corporate Email</h4>
@@ -961,16 +905,18 @@
                 </div>
 
                 <div class="app-chip-list">
-                    <a href="https://github.com/abdulbasit26Z1" target="_blank" rel="noopener" class="app-chip">GitHub Profile</a>
+                    <a href="https://github.com/abdulbasit26Z1" target="_blank" rel="noopener" class="app-chip">
+                        <img src="https://github.com/abdulbasit26Z1.png" class="app-chip-icon" alt="GitHub"> GitHub Profile
+                    </a>
                     <a href="https://play.google.com/store/apps/dev?id=7792521008004964438" target="_blank" rel="noopener" class="app-chip">Google Play Console</a>
-                    <a href="https://www.linkedin.com/company/azmeer-groups/" target="_blank" rel="noopener" class="app-chip">LinkedIn Page</a>
-                    <a href="https://x.com/AzMeerGroups" target="_blank" rel="noopener" class="app-chip">X (Twitter) @AzMeerGroups</a>
-                    <a href="https://www.facebook.com/AzMeerGroups" target="_blank" rel="noopener" class="app-chip">Facebook Page</a>
-                    <a href="https://www.instagram.com/AzMeerGroups" target="_blank" rel="noopener" class="app-chip">Instagram @AzMeerGroups</a>
+                    <a href="https://www.linkedin.com/in/abdul-basit-63662a2b7/" target="_blank" rel="noopener" class="app-chip">LinkedIn Profile</a>
+                    <a href="https://x.com/Az_AbdulBasit" target="_blank" rel="noopener" class="app-chip">X (Twitter) @Az_AbdulBasit</a>
+                    <a href="https://web.facebook.com/abdulbasitkhandasti161" target="_blank" rel="noopener" class="app-chip">Facebook Profile</a>
+                    <a href="https://www.instagram.com/azmeer2618/" target="_blank" rel="noopener" class="app-chip">Instagram @azmeer2618</a>
                     <a href="https://www.threads.net/@azmeer.ltd" target="_blank" rel="noopener" class="app-chip">Threads @azmeer.ltd</a>
-                    <a href="https://www.youtube.com/@AzMeerTech" target="_blank" rel="noopener" class="app-chip">YouTube Channel</a>
-                    <a href="https://www.fiverr.com/abdulbasit" target="_blank" rel="noopener" class="app-chip">Fiverr Storefront</a>
-                    <a href="https://medium.com/@AzMeerGroups" target="_blank" rel="noopener" class="app-chip">Medium Articles</a>
+                    <a href="https://www.youtube.com/@AzMeerLtd" target="_blank" rel="noopener" class="app-chip">YouTube Channel</a>
+                    <a href="https://www.fiverr.com/azmeer26?public_mode=true" target="_blank" rel="noopener" class="app-chip">Fiverr Profile</a>
+                    <a href="https://medium.com/@teamabhpk" target="_blank" rel="noopener" class="app-chip">Medium Articles</a>
                 </div>
             </div>
         </section>
@@ -978,8 +924,11 @@
 
     <footer>
         <div class="footer-content">
-            <div class="brand-logo" style="font-size: 1.4rem;">AZ MEER <span>// Abdul Basit</span></div>
-            <p class="footer-text">© 2026 AZ MEER (SMC-PRIVATE) LIMITED. Trade Name: AzMeer Groups. All Rights Reserved.</p>
+            <div class="brand-logo" style="font-size: 1.4rem;">
+                <img src="https://github.com/abdulbasit26Z1.png" alt="AZ MEER Logo" class="brand-nav-avatar">
+                AZ MEER <span>// Abdul Basit</span>
+            </div>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">© 2026 AZ MEER (SMC-PRIVATE) LIMITED. Trade Name: AzMeer Groups. All Rights Reserved.</p>
         </div>
     </footer>
 
