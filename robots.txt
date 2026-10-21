@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://abdulbasit26z1.github.io/Abdul-Basit/sitemap.xml
+Sitemap: https://abdulbasit26z1.github.io/Abdul-Basit/feed.xml
