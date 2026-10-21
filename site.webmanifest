@@ -1,0 +1,21 @@
+{
+  "name": "Abdul Basit | Founder & CEO, AZ MEER (SMC-PRIVATE) LIMITED",
+  "short_name": "Abdul Basit",
+  "description": "Official entity page for Abdul Basit: Founder & CEO of AZ MEER (SMC-PRIVATE) LIMITED, Cross-Platform Mobile Architect, and BSIT Scholar.",
+  "start_url": "https://abdulbasit26z1.github.io/Abdul-Basit/",
+  "display": "standalone",
+  "background_color": "#090d16",
+  "theme_color": "#7c3aed",
+  "icons": [
+    {
+      "src": "https://github.com/abdulbasit26Z1.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://github.com/abdulbasit26Z1.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
