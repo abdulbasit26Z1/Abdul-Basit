@@ -36,4 +36,16 @@
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
+    <url>
+        <loc>https://abdulbasit26z1.github.io/Abdul-Basit/blog/flutter-clean-architecture-guide.html</loc>
+        <lastmod>2026-10-21</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://abdulbasit26z1.github.io/Abdul-Basit/blog/android-jetpack-performance-optimization.html</loc>
+        <lastmod>2026-10-21</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>

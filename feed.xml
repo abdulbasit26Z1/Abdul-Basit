@@ -3,25 +3,41 @@
 <channel>
     <title>Abdul Basit &amp; AZ MEER Technical Publications &amp; App Releases</title>
     <link>https://abdulbasit26z1.github.io/Abdul-Basit/</link>
-    <description>Articles on Flutter Performance, SECP Corporate Software in Pakistan, E-Commerce Mobile Architecture, and CapCut Pro MOD APK by Abdul Basit, CEO of AZ MEER (SMC-PRIVATE) LIMITED.</description>
+    <description>Articles on Flutter Performance, Clean Architecture, Native Android Jetpack, SECP Corporate Software in Pakistan, E-Commerce Architecture, and CapCut Pro MOD APK by Abdul Basit, CEO of AZ MEER (SMC-PRIVATE) LIMITED.</description>
     <language>en-us</language>
-    <pubDate>Sun, 29 Mar 2026 00:00:00 GMT</pubDate>
-    <lastBuildDate>Sun, 29 Mar 2026 00:00:00 GMT</lastBuildDate>
+    <pubDate>Wed, 21 Oct 2026 00:00:00 GMT</pubDate>
+    <lastBuildDate>Wed, 21 Oct 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://abdulbasit26z1.github.io/Abdul-Basit/feed.xml" rel="self" type="application/rss+xml" />
 
     <item>
         <title>CapCut Pro Mod APK v19.8.0 (Pro Unlocked, No Watermark, 4K Export) Download</title>
         <link>https://abdulbasit26z1.github.io/Abdul-Basit/apps/capcut-pro-mod-apk.html</link>
         <description>Download CapCut Pro MOD APK v19.8.0 for Android (100% Working, Pro Unlocked, No Watermark, 4K 60FPS Export, Anti-Ban).</description>
-        <pubDate>Sun, 29 Mar 2026 00:00:00 GMT</pubDate>
+        <pubDate>Wed, 21 Oct 2026 00:00:00 GMT</pubDate>
         <guid>https://abdulbasit26z1.github.io/Abdul-Basit/apps/capcut-pro-mod-apk.html</guid>
+    </item>
+
+    <item>
+        <title>Building Enterprise Flutter Apps with Clean Architecture &amp; BLoC Pattern</title>
+        <link>https://abdulbasit26z1.github.io/Abdul-Basit/blog/flutter-clean-architecture-guide.html</link>
+        <description>Technical guide on Clean Architecture, SOLID principles, BLoC pattern, and GetIt dependency injection in Flutter by Abdul Basit.</description>
+        <pubDate>Wed, 21 Oct 2026 00:00:00 GMT</pubDate>
+        <guid>https://abdulbasit26z1.github.io/Abdul-Basit/blog/flutter-clean-architecture-guide.html</guid>
+    </item>
+
+    <item>
+        <title>Native Android Jetpack &amp; Kotlin Coroutines Performance Optimization</title>
+        <link>https://abdulbasit26z1.github.io/Abdul-Basit/blog/android-jetpack-performance-optimization.html</link>
+        <description>Performance optimization guide for Kotlin Coroutines, Jetpack Compose recomposition, Room DB, and Baseline Profiles by Abdul Basit.</description>
+        <pubDate>Wed, 21 Oct 2026 00:00:00 GMT</pubDate>
+        <guid>https://abdulbasit26z1.github.io/Abdul-Basit/blog/android-jetpack-performance-optimization.html</guid>
     </item>
 
     <item>
         <title>Mastering 60 FPS UI Rendering in Flutter: Advanced Performance Optimization Guide</title>
         <link>https://abdulbasit26z1.github.io/Abdul-Basit/blog/flutter-60fps-performance.html</link>
         <description>In-depth technical guide by Abdul Basit on achieving 60 FPS rendering in Flutter through state management, RepaintBoundary, Impeller tuning, and memory profiling.</description>
-        <pubDate>Sun, 29 Mar 2026 00:00:00 GMT</pubDate>
+        <pubDate>Wed, 21 Oct 2026 00:00:00 GMT</pubDate>
         <guid>https://abdulbasit26z1.github.io/Abdul-Basit/blog/flutter-60fps-performance.html</guid>
     </item>
 
@@ -29,7 +45,7 @@
         <title>Building Enterprise Corporate Software in Pakistan: SECP Compliance &amp; Legal IT Infrastructure</title>
         <link>https://abdulbasit26z1.github.io/Abdul-Basit/blog/secp-corporate-software-pakistan.html</link>
         <description>Legal &amp; technical guide on SECP company incorporation (Reg: 20260310_4609622), FBR tax integration, and enterprise software engineering in Pakistan.</description>
-        <pubDate>Sun, 29 Mar 2026 00:00:00 GMT</pubDate>
+        <pubDate>Wed, 21 Oct 2026 00:00:00 GMT</pubDate>
         <guid>https://abdulbasit26z1.github.io/Abdul-Basit/blog/secp-corporate-software-pakistan.html</guid>
     </item>
 
@@ -37,7 +53,7 @@
         <title>Architecting High-Scale E-Commerce Mobile Platforms: Grozy Mart Case Study</title>
         <link>https://abdulbasit26z1.github.io/Abdul-Basit/blog/grozy-mart-ecommerce-architecture.html</link>
         <description>Technical case study detailing mobile app state management, real-time geolocation tracking, and cart synchronization in Grozy Mart.</description>
-        <pubDate>Sun, 29 Mar 2026 00:00:00 GMT</pubDate>
+        <pubDate>Wed, 21 Oct 2026 00:00:00 GMT</pubDate>
         <guid>https://abdulbasit26z1.github.io/Abdul-Basit/blog/grozy-mart-ecommerce-architecture.html</guid>
     </item>
 </channel>

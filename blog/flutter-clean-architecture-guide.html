@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="IXEQClmiqF5MVdLpDNHQqFSTaWY_9ZpHVmYQWCUj0JE">
+    <title>Building Enterprise Flutter Apps with Clean Architecture &amp; BLoC Pattern | Abdul Basit</title>
+
+    <meta name="description" content="Master enterprise Flutter app development using Clean Architecture, Uncle Bob's SOLID principles, BLoC state management, Dependency Injection with GetIt, and automated testing by Abdul Basit, CEO of AZ MEER (SMC-PRIVATE) LIMITED.">
+    <meta name="keywords" content="Flutter Clean Architecture, Flutter BLoC Pattern, SOLID Principles Flutter, Flutter Dependency Injection, GetIt Injectable, Test Driven Development Flutter, Abdul Basit, AZ MEER, Enterprise Mobile Architecture">
+    <meta name="author" content="Abdul Basit">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://abdulbasit26z1.github.io/Abdul-Basit/blog/flutter-clean-architecture-guide.html">
+    <link rel="manifest" href="../site.webmanifest">
+
+    <link rel="preconnect" href="https://github.com" crossorigin>
+    <link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Building Enterprise Flutter Apps with Clean Architecture | Abdul Basit">
+    <meta property="og:description" content="In-depth guide on domain-driven design, BLoC pattern, and test-driven development in Flutter.">
+    <meta property="og:url" content="https://abdulbasit26z1.github.io/Abdul-Basit/blog/flutter-clean-architecture-guide.html">
+    <meta property="og:image" content="https://github.com/abdulbasit26Z1.png">
+    <meta property="article:published_time" content="2026-03-29">
+    <meta property="article:author" content="https://abdulbasit26z1.github.io/Abdul-Basit/#person">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Az_AbdulBasit">
+    <meta name="twitter:creator" content="@Az_AbdulBasit">
+    <meta name="twitter:title" content="Building Enterprise Flutter Apps with Clean Architecture | Abdul Basit">
+    <meta name="twitter:description" content="Domain-driven design and BLoC pattern in Flutter by Abdul Basit.">
+    <meta name="twitter:image" content="https://github.com/abdulbasit26Z1.png">
+
+    <link rel="icon" type="image/png" href="https://github.com/abdulbasit26Z1.png">
+
+    <!-- JSON-LD Article Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "@id": "https://abdulbasit26z1.github.io/Abdul-Basit/blog/flutter-clean-architecture-guide.html#article",
+      "headline": "Building Enterprise Flutter Apps with Clean Architecture & BLoC Pattern",
+      "description": "Comprehensive guide on structuring large-scale Flutter projects using Domain Driven Design, Clean Architecture, BLoC state management, and GetIt dependency injection.",
+      "datePublished": "2026-03-29",
+      "dateModified": "2026-03-29",
+      "mainEntityOfPage": "https://abdulbasit26z1.github.io/Abdul-Basit/blog/flutter-clean-architecture-guide.html",
+      "author": {
+        "@type": "Person",
+        "name": "Abdul Basit",
+        "url": "https://abdulbasit26z1.github.io/Abdul-Basit/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "AZ MEER (SMC-PRIVATE) LIMITED",
+        "url": "https://abdulbasit26z1.github.io/Abdul-Basit/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://github.com/abdulbasit26Z1.png"
+        }
+      },
+      "image": "https://github.com/abdulbasit26Z1.png",
+      "articleSection": "Software Architecture",
+      "keywords": "Flutter, Clean Architecture, BLoC, Domain Driven Design, Dart, GetIt"
+    }
+    </script>
+
+    <style>
+        :root {
+            --bg-base: #f8fafc;
+            --bg-card: rgba(255, 255, 255, 0.92);
+            --primary: #7c3aed;
+            --text-dark: #0f172a;
+            --text-muted: #475569;
+            --border-subtle: rgba(226, 232, 240, 0.9);
+            --radius-md: 14px;
+            --max-width: 950px;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            background: var(--bg-base);
+            color: var(--text-dark);
+            line-height: 1.85;
+            padding: 0 1.25rem;
+        }
+        header {
+            max-width: var(--max-width);
+            margin: 1.5rem auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.95rem;
+        }
+        main {
+            max-width: var(--max-width);
+            margin: 0 auto 4rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-md);
+            padding: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+        }
+        .article-tag {
+            background: rgba(124, 58, 237, 0.1);
+            color: var(--primary);
+            padding: 0.35rem 0.85rem;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        h1 { font-size: 2.2rem; font-weight: 900; margin: 1rem 0; line-height: 1.25; color: var(--text-dark); }
+        .meta-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.25rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid var(--border-subtle);
+            padding-bottom: 1rem;
+        }
+        h2 { font-size: 1.5rem; font-weight: 800; margin: 2.25rem 0 1rem; color: var(--text-dark); }
+        p { margin-bottom: 1.25rem; color: #334155; font-size: 1.05rem; }
+        ul, ol { margin: 1rem 0 1.5rem 1.5rem; }
+        li { margin-bottom: 0.5rem; color: #334155; }
+        code { background: #f1f5f9; color: #7c3aed; padding: 0.2rem 0.4rem; border-radius: 6px; font-family: monospace; font-size: 0.95rem; }
+        pre { background: #0f172a; color: #f8fafc; padding: 1.5rem; border-radius: 12px; overflow-x: auto; margin: 1.5rem 0; font-size: 0.9rem; }
+        pre code { background: none; color: inherit; padding: 0; }
+        .author-box { display: flex; align-items: center; gap: 1rem; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-subtle); }
+        .author-avatar { width: 60px; height: 60px; border-radius: 50%; object-fit: cover; aspect-ratio: 1/1; }
+        footer { text-align: center; margin: 4rem 0 2rem; color: var(--text-muted); font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="https://abdulbasit26z1.github.io/Abdul-Basit/" class="back-link" aria-label="Return to Abdul Basit Portal">
+            &larr; Return to AZ MEER Portal
+        </a>
+        <span class="article-tag">Architecture &amp; Design</span>
+    </header>
+
+    <main>
+        <article>
+            <h1>Building Enterprise Flutter Apps with Clean Architecture &amp; BLoC Pattern</h1>
+
+            <div class="meta-bar">
+                <span>By <strong>Abdul Basit</strong> (Founder &amp; CEO, AZ MEER)</span>
+                <span>Published: March 29, 2026</span>
+                <span>Reading Time: 13 min</span>
+            </div>
+
+            <p>
+                As cross-platform mobile engineering scales, maintaining a clean separation of concerns becomes essential. In large-scale production apps, mixing business logic with UI rendering code leads to technical debt, tight coupling, and brittle automated test suites.
+            </p>
+
+            <p>
+                As the Lead Mobile Architect and CEO of <strong>AZ MEER (SMC-PRIVATE) LIMITED</strong>, I enforce Domain-Driven Clean Architecture across all client and internal Flutter applications. In this technical publication, I present a production-tested architectural framework based on Uncle Bob's Clean Architecture, SOLID principles, BLoC state management, and dependency injection.
+            </p>
+
+            <h2>1. The Three Layers of Clean Architecture</h2>
+            <ul>
+                <li><strong>Domain Layer (Inner Core):</strong> Contains pure Dart entities, value objects, and abstract repository interfaces. Independent of Flutter or external frameworks.</li>
+                <li><strong>Data Layer (Middle):</strong> Implements repository interfaces, manages remote REST/GraphQL API data sources, and local database persistence (Hive/SQLite).</li>
+                <li><strong>Presentation Layer (Outer):</strong> Manages UI widgets, BLoC event streams, and user interactions.</li>
+            </ul>
+
+<pre><code>// Abstract Repository Interface in Domain Layer
+abstract class ProductRepository {
+  Future&lt;Either&lt;Failure, List&lt;ProductEntity&gt;&gt;&gt; getFeaturedProducts();
+}
+
+// BLoC State Management Event Handler
+class ProductBloc extends Bloc&lt;ProductEvent, ProductState&gt; {
+  final GetFeaturedProductsUseCase getFeaturedProducts;
+
+  ProductBloc({required this.getFeaturedProducts}) : super(ProductInitial()) {
+    on&lt;FetchProductsEvent&gt;((event, emit) async {
+      emit(ProductLoading());
+      final result = await getFeaturedProducts(NoParams());
+      result.fold(
+        (failure) =&gt; emit(ProductError(message: failure.message)),
+        (products) =&gt; emit(ProductLoaded(products: products)),
+      );
+    });
+  }
+}
+</code></pre>
+
+            <h2>2. Dependency Injection with GetIt &amp; Injectable</h2>
+            <p>
+                To decouple layers, use <code>get_it</code> for service location and <code>injectable</code> for automated code generation:
+            </p>
+
+<pre><code>final sl = GetIt.instance;
+
+void initDependencyInjection() {
+  // BLoC
+  sl.registerFactory(() =&gt; ProductBloc(getFeaturedProducts: sl()));
+
+  // UseCases
+  sl.registerLazySingleton(() =&gt; GetFeaturedProductsUseCase(repository: sl()));
+
+  // Repositories
+  sl.registerLazySingleton&lt;ProductRepository&gt;(
+    () =&gt; ProductRepositoryImpl(remoteDataSource: sl()),
+  );
+}
+</code></pre>
+
+            <h2>Conclusion</h2>
+            <p>
+                Adopting Clean Architecture ensures that Flutter codebases remain testable, maintainable, and adaptable as business requirements grow.
+            </p>
+
+            <div class="author-box">
+                <img src="https://github.com/abdulbasit26Z1.png" alt="Abdul Basit" class="author-avatar" width="60" height="60" loading="lazy" decoding="async">
+                <div>
+                    <strong style="font-size:1.1rem; color:var(--text-dark);">Written by Abdul Basit</strong>
+                    <p style="font-size:0.9rem; margin-bottom:0;">Founder &amp; CEO of AZ MEER (SMC-PRIVATE) LIMITED, Cross-Platform Mobile Architect, and BSIT Scholar at Superior University Lahore.</p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AZ MEER (SMC-PRIVATE) LIMITED. All Rights Reserved. | <a href="https://abdulbasit26z1.github.io/Abdul-Basit/" style="color:var(--primary);">Return to Main Portal</a></p>
+    </footer>
+
+</body>
+</html>
